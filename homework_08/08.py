@@ -1,0 +1,5 @@
+length = int(input('Введите длину колонтитула: '))
+symbols = int(input('Введите количество воскл знаков: '))
+print(((length - symbols) // 2) * '~', end='')
+print(symbols * '!', end='')
+print((length - (length - symbols) // 2 - symbols) * '~', end='')
