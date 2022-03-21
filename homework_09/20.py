@@ -5,8 +5,7 @@ for i in range(1, N + 1):
     k = int(input('Число: '))
     list_1.append(k)
     list_2.append(k)
-list_1.insert(N, list_2[0])
-for i in range(1, N):
+for i in range(0, N - 1):
     list_1.insert(len(list_1) - i, list_2[i])
     list_3 = list(reversed(list_1))
     if list_3 == list_1:
